@@ -1,5 +1,5 @@
 /* Mobile & tablet */
-@media (max-width: 1023px){
+@media (max-width: 63.9375em){
     .btn{
         padding: 15px 16px;
     }
@@ -10,12 +10,15 @@
         font-size: 48px;
     }
     .contract-form .form-control {
-        margin: 0 8px;
+        margin: 0 px;
+        font-size: 16px;
     }
     .contact-info{
        line-height: 2;
     }
-   
+    .contact-submit-btn{
+        font-size: 16px;
+    }
     #footer .copyright a{
         display:inline-block;
         padding: 12px 0;
@@ -25,10 +28,10 @@
     }
 }
 /* Tablet */
-@media (min-width: 741px) and (max-width: 1023px ){
+@media (min-width: 46.3125em) and (max-width: 63.9375em ){
 }
 /* Mobile  */
-@media (max-width: 740px){
+@media (max-width: 46.3125em){
     .s-full-with, .s-col-full{
         width: 100% !important;
     }
@@ -36,7 +39,7 @@
         margin-top: 8px !important;
     }
     #nav{
-        display: block;
+         display:block ;
     }
     #nav > li {
         display: block;
@@ -52,14 +55,16 @@
         color: #fff;
         padding: 0 41px;
     }
+
     #header{
         overflow: hidden;
     }
     #header .search-btn{
-        display: none;
+        display:none
     }
     #header .mobile-menu-btn{
         display: block;
+        
     }
     #content .member-img{
         width: 60%;
@@ -68,4 +73,5 @@
         margin-top: 32px;
        
     }
+
 }

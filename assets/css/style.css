@@ -31,6 +31,8 @@ html {
     display: inline-block;
     margin-top: 15px;
     border: none;
+    appearance: none;
+    -webkit-appearance: none;
 }
 .btn:hover {
     color: #000;
@@ -67,6 +69,9 @@ html {
 .mt-16{
     margin-top: 16px !important;
 }
+.mt-32{
+    margin-top: 32px !important;
+}
 
 /* main */
 #main{
@@ -81,10 +86,10 @@ html {
     height: 46px;
     background-color: #000;
     z-index: 1;
+
 }
 #nav{
     display: inline-block;
-
 }
 
 #nav li{
@@ -139,21 +144,36 @@ html {
 #nav > li:hover > a {
     color: #000;
     background-color: #ccc;
-    display: inline-block;
+    /* display: inline-block; */
 }
 #nav .nav-arrow-down{
     font-size: 14px;
 }
-
+#header .mobile-menu-btn{
+    position: absolute;
+    top:0;
+    right: 0;
+    display: none;
+}
+#header .mobile-menu-btn,
 #header .search-btn{
     padding: 0 21px;
     float: right;
    
 }
+
 #header .search-btn:hover {
     background-color: #f44336;
     cursor: pointer;
 }
+#header .mobile-menu-btn:hover{
+    background-color: #ccc;
+}
+#header .mobile-menu-btn:hover .menu-icon{
+    color: #000;
+}
+
+#header .menu-icon,
 #header .search-icon {
     font-size: 20px;
     color: #fff;
@@ -161,13 +181,14 @@ html {
 }
 
 #slider{
-    position: relative;
+    position:relative ;
     margin-top: 46px;
     padding-top: 50%;
     background: url('../img/slider/slider1.jpg') top center / cover no-repeat;
 }
 
 #slider .text-content {
+    text-shadow: 0 0 1px #000;
     position:absolute;
     bottom: 47px;
     color:#fff;
@@ -187,9 +208,12 @@ html {
 }
 #content .content-section{
     width: 800px;
+    max-width: 100%;
     padding:64px 0 112px;
     margin-left:auto;
     margin-right: auto;
+    padding-left: 16px ;
+    padding-right: 16px ;
 }
  
 #content .section-heading{
@@ -215,7 +239,7 @@ html {
     line-height: 1.4;
 }
 #content .member-list{
-    margin-top: 48px;
+    margin-top: 32px;
 }
 
 
@@ -264,7 +288,7 @@ html {
 /*places*/
 
 .places-list{
-    margin-top: 32px;
+    margin-top: 16px;
 
 }
 .place-img{
@@ -300,6 +324,13 @@ html {
 .contact-info{
     font-size: 18px;
     line-height: 1.5;
+}
+.contact-info a{
+    color: #101aef;
+    opacity: 0.8;
+}
+.contact-info a:hover{
+    opacity: 1;
 }
 .contact-info i[class*="ti-"]{
     width: 30px;
@@ -371,7 +402,7 @@ html {
     width: 900px;
     min-height: 200px;
     position: relative;
-    max-width: calc(100%-32px);
+    max-width: calc(100% - 32px);
     animation: modalFadeIn ease .5s;
 }
 
